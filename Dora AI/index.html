@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <title>AI Voice Assistant</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/echotra/css/additional.css"><link rel="stylesheet" href="assets/echotra/css/additional.css" type="text/css">
+  
+  
+
+  <style>:root{ --background: #dcb3f5; --dominant-color: #7209B7; --primary-color: #4361EE; --secondary-color: #4CC9F0; --success-color: #28D685; --danger-color: #D82637; --warning-color: #FEBF00; --info-color: #0DCBF1; --background-text: #000000; --dominant-text: #FFFFFF; --primary-text: #FFFFFF; --secondary-text: #000000; --success-text: #000000; --danger-text: #FFFFFF; --warning-text: #000000; --info-text: #000000;}</style>
+</head>
+<body>
+  
+    <style>
+  .cid-u2Fu3IwjmA {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .cid-u2Fu3IwjmA {
+    align-items: flex-end;
+  }
+  .cid-u2Fu3IwjmA .row {
+    justify-content: center;
+  }
+  .cid-u2Fu3IwjmA .content-wrap {
+    padding: 1rem 3rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-u2Fu3IwjmA .content-wrap {
+    min-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-u2Fu3IwjmA {
+    -webkit-align-items: center;
+    align-items: flex-end;
+  }
+  .cid-u2Fu3IwjmA .mbr-row {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-u2Fu3IwjmA .content-wrap {
+    width: 100%;
+  }
+}
+.cid-u2Fu3IwjmA .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2Fu3IwjmA .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000000;
+}
+.cid-u2Fu3IwjmA .mbr-section-title,
+.cid-u2Fu3IwjmA .mbr-section-subtitle {
+  text-align: left;
+  color: var(--dominant-color, #ffc091);
+}
+.cid-u2Fu3IwjmA .mbr-text,
+.cid-u2Fu3IwjmA .mbr-section-btn {
+  text-align: center;
+}
+.cid-u2Fu3IwjmA .mbr-section-title {
+  text-align: center;
+}
+#hero_img
+{
+  height: 300px;
+  width: auto;
+  margin: 20px;
+}
+</style>
+<section class="header18 cid-u2Fu3IwjmA mbr-fullscreen" id="hero-16-u2Fu3IwjmA" style="background: linear-gradient(109.6deg, rgb(193, 98, 253) 11.2%, rgb(0, 49, 165) 91.1%);">
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <img src="assets/images/doraai.png" id="hero_img">
+      <div class="content-wrap col-12 col-md-10">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong style="font-size: 100px; color: #000000;">Dora AI</strong>
+        </h1>
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Unleash the Power of Voice with Our AI Assistant</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="Dora ChatBox/doraAI.html">Try Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <style>
+.cid-u2Fu3Iwzzf {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: transparent;
+}
+.cid-u2Fu3Iwzzf .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2Fu3Iwzzf .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-u2Fu3Iwzzf .card-wrapper {
+  background: #ffffff;
+}
+@media (max-width: 767px) {
+  .cid-u2Fu3Iwzzf .card-wrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-u2Fu3Iwzzf .card-wrapper {
+    padding: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-u2Fu3Iwzzf .card-wrapper {
+    padding: 4rem;
+  }
+}
+.cid-u2Fu3Iwzzf .mbr-text,
+.cid-u2Fu3Iwzzf .mbr-section-btn {
+  color: #000000;
+  text-align: left;
+}
+.cid-u2Fu3Iwzzf .card-title,
+.cid-u2Fu3Iwzzf .card-box {
+  text-align: left;
+  color: #000000;
+}
+</style>
+<section class="article07 cid-u2Fu3Iwzzf" id="about-me-7-u2Fu3Iwzzf">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="card col-md-12 col-lg-10">
+        <div class="card-wrapper">
+          <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+            <strong>About Dora AI</strong>
+          </h3>
+          <div class="row card-box align-left">
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                Welcome to the future of voice technology, where your every command is our delight. At Dora AI, we&#x27;ve harnessed the power of AI to bring you a voice assistant that&#x27;s smarter, faster, and more intuitive than ever before.
+                </p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Our AI assistant is designed to understand your needs, anticipate your desires, and execute your commands with lightning speed. Say goodbye to mundane tasks and hello to a world of seamless voice interaction.
+                </p>
+              </div>
+            </div>
+            <div class="item features-without-image col-12">
+              <div class="item-wrapper">
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Join the revolution and experience the magic of Dora AI. It&#x27;s time to speak and watch things happen!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <style>
+    .cid-u2Fu3IwvgQ {
+        padding-top: 6em;
+        padding-bottom: 6em;
+        background-color: var(--dominant-color, #393193);
+    }
+    @media (min-width: 768px) {
+        .cid-u2Fu3IwvgQ {
+            align-items: center;
+        }
+        .cid-u2Fu3IwvgQ .row {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+        .cid-u2Fu3IwvgQ .content-wrap {
+            min-width: 50%;
+        }
+    }
+    @media (max-width: 767px) {
+        .cid-u2Fu3IwvgQ {
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .cid-u2Fu3IwvgQ .mbr-row {
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+        .cid-u2Fu3IwvgQ .content-wrap {
+            width: 100%;
+        }
+    }
+    .cid-u2Fu3IwvgQ .mbr-section-title {
+        text-align: center;
+        color: var(--dominant-text, #ffffff);
+    }
+    .cid-u2Fu3IwvgQ .mbr-text,
+    .cid-u2Fu3IwvgQ .mbr-section-btn {
+        text-align: center;
+        color: var(--dominant-text, #ffffff);
+    }
+</style>
+<section class="header19 cid-u2Fu3IwvgQ" id="call-to-action-7-u2Fu3IwvgQ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1" style="color: #000000;">
+                    <strong>Ready to Get Started?</strong>
+                </h1>
+                <p class="mbr-fonts-style mbr-text mb-4 display-7" style="color: #000000;">
+                    Take the first step towards a voice-powered future. Try Dora AI today!
+                </p>
+                <div class="mbr-section-btn">
+                    <a class="btn btn-primary display-7" href="#">
+                        Get Started
+                    </a> 
+                    <a class="btn btn-secondary display-7" href="#">
+                        Learn More
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <style>
+    .cid-u2Fu3IwlXs {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        background-color: transparent;
+    }
+
+    .cid-u2Fu3IwlXs .mbr-fallback-image.disabled {
+        display: none;
+    }
+
+    .cid-u2Fu3IwlXs .mbr-fallback-image {
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    .cid-u2Fu3IwlXs .item-mb {
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width: 767px) {
+        .cid-u2Fu3IwlXs .item-mb {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .cid-u2Fu3IwlXs .item-wrapper {
+        background: #ffffff;
+        padding: 2.25rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        .cid-u2Fu3IwlXs .item-wrapper {
+            padding: 2rem 1.5rem;
+            margin-bottom: 0rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .cid-u2Fu3IwlXs .item-wrapper {
+            padding: 2rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .cid-u2Fu3IwlXs .mbr-section-title {
+        color: #000000;
+    }
+
+    .cid-u2Fu3IwlXs .mbr-section-subtitle {
+        color: #000000;
+    }
+
+    .cid-u2Fu3IwlXs .card-box {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .cid-u2Fu3IwlXs .card-box .item-footer {
+        margin-top: auto;
+    }
+
+    .cid-u2Fu3IwlXs .content-head {
+        max-width: 800px;
+    }
+
+    .cid-u2Fu3IwlXs .card-title,
+    .cid-u2Fu3IwlXs .iconfont-wrapper {
+        text-align: center;
+    }
+
+    .cid-u2Fu3IwlXs .card-text,
+    .cid-u2Fu3IwlXs .item .mbr-section-btn {
+        text-align: center;
+    }
+</style>
+<section class="features18 cid-u2Fu3IwlXs" id="features-24-u2Fu3IwlXs">
+    <div class="container">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-12 content-head">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                    <strong>Key Features</strong>
+                </h3>
+                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">
+                    Discover the incredible features that make Dora AI the ultimate voice assistant for all your needs.
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Smart</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Intelligent and intuitive, Dora AI understands and adapts to your commands.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Fast</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Lightning-fast execution of tasks, making voice interaction seamless and efficient.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Adaptive</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Adapts to your preferences and learns from your usage to provide a personalized experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Versatile</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Versatility to handle a wide range of tasks and commands, from simple to complex.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Secure</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Robust security measures to protect your voice data and ensure privacy and confidentiality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Interactive</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">
+                            Engage in natural, interactive conversations with Dora AI AI for a more human-like experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <style>
+.cid-u2Fu3IxCoi {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: transparent;
+}
+.cid-u2Fu3IxCoi .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-u2Fu3IxCoi .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 767px) {
+  .cid-u2Fu3IxCoi .image-wrapper {
+    flex-direction: column;
+  }
+  .cid-u2Fu3IxCoi .image-wrapper img {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+.cid-u2Fu3IxCoi .card-box {
+  max-width: 750px;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: 0;
+}
+.cid-u2Fu3IxCoi img,
+.cid-u2Fu3IxCoi .item-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.cid-u2Fu3IxCoi .card-wrapper {
+  background: #ffffff;
+}
+.cid-u2Fu3IxCoi .mbr-text,
+.cid-u2Fu3IxCoi .mbr-section-btn {
+  color: #000000;
+}
+.cid-u2Fu3IxCoi .card-title,
+.cid-u2Fu3IxCoi .card-box {
+  color: #232323;
+}
+@media (max-width: 767px) {
+  .cid-u2Fu3IxCoi .card-content-text {
+    padding: 2rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cid-u2Fu3IxCoi .card-content-text {
+    padding: 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-u2Fu3IxCoi .card-content-text {
+    padding: 4rem;
+  }
+}
+</style>
+
+  <section class="article01 cid-u2Fu3IxCoi" id="generic-text-1-u2Fu3IxCoi">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="card col-md-12 col-lg-12">
+          <div class="card-wrapper">
+            <div class="row">
+              <div class="image-wrapper col-12 col-sm-6 justify-content-center">
+                <img src="assets/images/photo-1573496130103-a442a3754d0e.jpg">
+              </div>
+              <div class="image-wrapper col-12 col-sm-6 justify-content-center">
+                <img src="assets/images/photo-1487611459768-bd414656ea10..jpg">
+              </div>
+            </div>
+
+            <div class="card-box align-left mb-3 card-content-text">
+              <h4 class="card-title mbr-fonts-style mbr-white mb-0 display-5">
+                <strong>Unleash the Power of Voice</strong>
+              </h4>
+              <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+              Dora AI is not just an assistant, it&#x27;s a revolution. Experience the freedom of hands-free interaction and the thrill of commanding tasks with just your voice.
+              </p>
+              <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+              Join the Dora AI community and be part of the voice-powered future. Embrace the convenience, efficiency, and magic of voice technology like never before.
+              </p>
+              <p class="mbr-text mbr-fonts-style mt-3 mb-0 display-7">
+              It&#x27;s time to unleash the power of your voice and watch the world respond at your command. Welcome to the future with Dora AI!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <style>
+  .cid-u2Fu3Iy4Gw {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #000000;
+    overflow: hidden;
+  }
+</style>
+<section class="footer4 cid-u2Fu3Iy4Gw" once="footers" id="footer-4-u2Fu3Iy4Gw">
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © 2024 Dora AI. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  <script src="assets/formoid/formoid.min.js"></script>
+  
+  <script>
+
+    (function(){
+      var animationInput = document.createElement('input');
+      animationInput.setAttribute('name', 'animation');
+      animationInput.setAttribute('type', 'hidden');
+      document.body.append(animationInput);
+    })();
+
+  </script>
+</body>
+</html>
